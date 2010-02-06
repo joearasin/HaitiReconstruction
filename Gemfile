@@ -1,7 +1,4 @@
-clear_sources
-bundle_path "vendor/bundler_gems"
-
-source "http://gemcutter.org"
+source :gemcutter
 source "http://gems.github.com"
 
 gem "rails", "2.3.5"
