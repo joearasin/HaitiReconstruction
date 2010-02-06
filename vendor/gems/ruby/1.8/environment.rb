@@ -12,10 +12,12 @@ module Bundler
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/rack-1.0.1/lib")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/actionpack-2.3.5/lib")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/actionmailer-2.3.5/lib")
+  $LOAD_PATH.unshift File.expand_path("#{dir}/gems/xml-magic-0.1.1/lib")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/machinist-1.0.6/lib")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/rake-0.8.7/bin")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/rake-0.8.7/lib")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/activerecord-2.3.5/lib")
+  $LOAD_PATH.unshift File.expand_path("#{dir}/gems/flickr-fu-0.1.4/lib")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/activeresource-2.3.5/lib")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/rails-2.3.5/bin")
   $LOAD_PATH.unshift File.expand_path("#{dir}/gems/rails-2.3.5/lib")
@@ -37,12 +39,16 @@ module Bundler
   @bundled_specs["actionpack"].loaded_from = "#{dir}/specifications/actionpack-2.3.5.gemspec"
   @bundled_specs["actionmailer"] = eval(File.read("#{dir}/specifications/actionmailer-2.3.5.gemspec"))
   @bundled_specs["actionmailer"].loaded_from = "#{dir}/specifications/actionmailer-2.3.5.gemspec"
+  @bundled_specs["xml-magic"] = eval(File.read("#{dir}/specifications/xml-magic-0.1.1.gemspec"))
+  @bundled_specs["xml-magic"].loaded_from = "#{dir}/specifications/xml-magic-0.1.1.gemspec"
   @bundled_specs["machinist"] = eval(File.read("#{dir}/specifications/machinist-1.0.6.gemspec"))
   @bundled_specs["machinist"].loaded_from = "#{dir}/specifications/machinist-1.0.6.gemspec"
   @bundled_specs["rake"] = eval(File.read("#{dir}/specifications/rake-0.8.7.gemspec"))
   @bundled_specs["rake"].loaded_from = "#{dir}/specifications/rake-0.8.7.gemspec"
   @bundled_specs["activerecord"] = eval(File.read("#{dir}/specifications/activerecord-2.3.5.gemspec"))
   @bundled_specs["activerecord"].loaded_from = "#{dir}/specifications/activerecord-2.3.5.gemspec"
+  @bundled_specs["flickr-fu"] = eval(File.read("#{dir}/specifications/flickr-fu-0.1.4.gemspec"))
+  @bundled_specs["flickr-fu"].loaded_from = "#{dir}/specifications/flickr-fu-0.1.4.gemspec"
   @bundled_specs["activeresource"] = eval(File.read("#{dir}/specifications/activeresource-2.3.5.gemspec"))
   @bundled_specs["activeresource"].loaded_from = "#{dir}/specifications/activeresource-2.3.5.gemspec"
   @bundled_specs["rails"] = eval(File.read("#{dir}/specifications/rails-2.3.5.gemspec"))

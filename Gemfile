@@ -6,3 +6,4 @@ gem "will_paginate"
 gem "machinist"
 gem "faker"
 gem "restful_authentication"
+gem 'flickr-fu'
