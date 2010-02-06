@@ -1,0 +1,6 @@
+require File.join(File.dirname(__FILE__), "authentication")
+require File.join(File.dirname(__FILE__), "authentication", "by_password")
+require File.join(File.dirname(__FILE__), "authentication", "by_cookie_token")
+require File.join(File.dirname(__FILE__), "authorization")
+require File.join(File.dirname(__FILE__), "authorization", "aasm_roles")
+require File.join(File.dirname(__FILE__), "authorization", "stateful_roles")
